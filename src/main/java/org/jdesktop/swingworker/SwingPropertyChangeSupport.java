@@ -7,10 +7,9 @@
 
 package org.jdesktop.swingworker;
 
-import java.beans.PropertyChangeSupport;
+import javax.swing.*;
 import java.beans.PropertyChangeEvent;
-
-import javax.swing.SwingUtilities;
+import java.beans.PropertyChangeSupport;
 
 /**
  * This subclass of {@code java.beans.PropertyChangeSupport} is almost
@@ -56,7 +55,7 @@ public final class SwingPropertyChangeSupport extends PropertyChangeSupport {
      * {@inheritDoc}
      *
      * <p>
-     * If {@see #isNotifyOnEDT} is {@code true} and called off the
+     * If {see #isNotifyOnEDT} is {@code true} and called off the
      * <i>Event Dispatch Thread</i> this implementation uses 
      * {@code SwingUtilities.invokeLater} to send out the notification
      * on the <i>Event Dispatch Thread</i>. This ensures  listeners

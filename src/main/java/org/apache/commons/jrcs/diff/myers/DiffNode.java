@@ -37,8 +37,8 @@ public final class DiffNode
    * will be followed using {@link PathNode#previousSnake}
    * until a non-diff node is found.
    *
-   * @param the position in the original sequence
-   * @param the position in the revised sequence
+   * @param i position in the original sequence
+   * @param j position in the revised sequence
    * @param prev the previous node in the path.
    */
   public DiffNode(int i, int j, PathNode prev)

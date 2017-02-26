@@ -7,18 +7,17 @@
 
 package org.jdesktop.swingworker;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeEvent;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.*;
-
-import java.awt.event.*;
-
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * An abstract class to perform lengthy GUI-interacting tasks in a
@@ -54,7 +53,7 @@ import javax.swing.Timer;
  * running task run in a background thread and provide updates to the UI 
  * either when done, or while processing. 
  * Subclasses of {@code SwingWorker} must implement 
- * the {@see #doInBackground} method to perform the background computation.
+ * the {see #doInBackground} method to perform the background computation.
  *
  *
  * <p>
@@ -698,7 +697,7 @@ public abstract class SwingWorker<T, V> implements Future<T>, Runnable {
     
     /**
      * Sets this {@code SwingWorker} state bound property.
-     * @param the state state to set
+     * @param state state to set
      */
     private void setState(StateValue state) {
         StateValue old = this.state;
@@ -732,7 +731,7 @@ public abstract class SwingWorker<T, V> implements Future<T>, Runnable {
      * get started.
      * 
      * @return ExecutorService for the {@code SwingWorkers}
-     * @see #startAutoShutdownThread
+     * see #startAutoShutdownThread
      */
     private static synchronized ExecutorService getWorkersExecutorService() {
         if (executorService == null) {

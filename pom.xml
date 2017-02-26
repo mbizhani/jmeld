@@ -4,12 +4,12 @@
 
 	<groupId>org.devocative</groupId>
 	<artifactId>jmeld</artifactId>
-	<version>3.3-SNAPSHOT</version>
+	<version>3.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>jmeld</name>
-	<description>A visual diff and merge tool. It is built to be fast with large files and runs on any operating
-		system.
+	<description>
+		A visual diff and merge tool. It is built to be fast with large files and runs on any operating system.
 	</description>
 	<url>https://github.com/albfan/jmeld</url>
 
@@ -20,6 +20,19 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<developers>
+		<developer>
+			<id>albfan</id>
+			<name>Alberto Fanjul</name>
+			<email>albertofanjul@gmail.com</email>
+			<organization>jmeld</organization>
+			<roles>
+				<role>Owner</role>
+				<role>Committer</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<scm>
 		<connection>scm:git:https://github.com/mbizhani/jmeld.git</connection>
@@ -175,7 +188,7 @@
 			<build>
 				<plugins>
 					<!-- JavaDoc -->
-					<!--<plugin>
+					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>
 						<version>${p.javadoc.ver}</version>
@@ -187,7 +200,7 @@
 								</goals>
 							</execution>
 						</executions>
-					</plugin>-->
+					</plugin>
 
 					<!-- GPG -->
 					<plugin>

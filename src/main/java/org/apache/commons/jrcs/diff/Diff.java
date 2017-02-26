@@ -113,7 +113,7 @@ public class Diff
   /**
    * Create a differencing object using the default algorithm
    *
-   * @param the original text that will be compared
+   * @param original text that will be compared
    */
   public Diff(Object[] original)
   {
@@ -123,7 +123,7 @@ public class Diff
   /**
    * Create a differencing object using the given algorithm
    *
-   * @param o the original text which will be compared against
+   * @param original text which will be compared against
    * @param algorithm the difference algorithm to use.
    */
   public Diff(Object[] original, DiffAlgorithm algorithm)
@@ -330,7 +330,7 @@ public class Diff
 
   /**
    * Generate a random sequence of the given size.
-   * @param The size of the sequence to generate.
+   * @param size of the sequence to generate.
    * @return The generated sequence.
    */
   public static Object[] randomSequence(int size)
@@ -340,7 +340,7 @@ public class Diff
 
   /**
    * Generate a random sequence of the given size.
-   * @param The size of the sequence to generate.
+   * @param size of the sequence to generate.
    * @param seed A seed value for randomizing the generation.
    * @return The generated sequence.
    */

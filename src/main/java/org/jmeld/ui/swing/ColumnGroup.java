@@ -59,7 +59,7 @@ public class ColumnGroup
 
   /**
    * @param c    TableColumn
-   * @param v    ColumnGroups
+   * @param g    ColumnGroups
    */
   public Vector getColumnGroups(TableColumn c, Vector g)
   {

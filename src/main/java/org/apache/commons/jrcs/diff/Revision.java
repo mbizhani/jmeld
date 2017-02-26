@@ -58,12 +58,7 @@ package org.apache.commons.jrcs.diff;
 
 import org.apache.commons.jrcs.util.ToString;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 /**
  * A Revision holds the series of deltas that describe the differences
@@ -264,7 +259,7 @@ public class Revision
 
   /**
    * Accepts a visitor.
-   * @param visitor the {@link Visitor} visiting this instance
+   * @param visitor the {@link RevisionVisitor} visiting this instance
    */
   public void accept(RevisionVisitor visitor)
   {
