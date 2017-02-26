@@ -63,6 +63,8 @@ public class DiffLabel
   /** Set the text on this label.
    *  Some parts of the text will be displayed in bold-style.
    *  These parts are the differences between text and otherText.
+   * @param text text
+   * @param otherText otherText
    */
   public void setText(String text, String otherText)
   {

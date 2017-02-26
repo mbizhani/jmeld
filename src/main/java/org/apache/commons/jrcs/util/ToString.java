@@ -101,6 +101,7 @@ public class ToString
    * Use the value of the <code>line.separator</code> system property
    * as the linebreak character.
    * @param value the string to convert.
+   * @return String[]
    */
   public static String[] stringToArray(String value)
   {
@@ -128,6 +129,7 @@ public class ToString
    * Use the value of the <code>line.separator</code> system property
    * the line separator.
    * @param o the array of objects.
+   * @return String
    */
   public static String arrayToString(Object[] o)
   {
@@ -139,6 +141,7 @@ public class ToString
    * using the given line separator.
    * @param o the array of objects.
    * @param EOL the string to use as line separator.
+   * @return String
    */
   public static String arrayToString(Object[] o, String EOL)
   {

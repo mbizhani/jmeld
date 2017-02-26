@@ -405,7 +405,6 @@ public abstract class SwingWorker<T, V> implements Future<T>, Runnable {
      * Receives data chunks from the {@code publish} method asynchronously on the
      * <i>Event Dispatch Thread</i>.
      * 
-     * <p>
      * Please refer to the {@link #publish} method for more details.
      * 
      * @param chunks intermediate results to process

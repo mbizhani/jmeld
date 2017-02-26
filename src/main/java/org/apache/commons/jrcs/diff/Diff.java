@@ -155,6 +155,7 @@ public class Diff
    * @param orig the original
    * @param rev the revision to compare with the original.
    * @return a Revision describing the differences
+   * @throws DifferentiationFailedException
    */
   public static Revision diff(Object[] orig, Object[] rev)
       throws DifferentiationFailedException
@@ -174,6 +175,7 @@ public class Diff
    * @param rev the revision to compare with the original.
    * @param algorithm the difference algorithm to use
    * @return a Revision describing the differences
+   * @throws DifferentiationFailedException
    */
   public static Revision diff(Object[] orig, Object[] rev,
       DiffAlgorithm algorithm)
@@ -192,6 +194,7 @@ public class Diff
    *
    * @param rev the revision to compare with the original.
    * @return a Revision describing the differences
+   * @throws DifferentiationFailedException
    */
   public Revision diff(Object[] rev)
       throws DifferentiationFailedException
@@ -236,6 +239,7 @@ public class Diff
    * using {@link Diff#NL Diff.NL}
    * as the line separator.
    * @param o the array of objects.
+   * @return String
    */
   public static String arrayToString(Object[] o)
   {

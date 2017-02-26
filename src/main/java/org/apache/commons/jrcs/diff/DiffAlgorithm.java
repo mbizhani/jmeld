@@ -75,6 +75,7 @@ public interface DiffAlgorithm
    * The revision can be used to construct the revised sequence
    * from the original sequence.
    *
+   * @param orig orig
    * @param rev the revised text
    * @return the revision script.
    * @throws DifferentiationFailedException if the diff could not be computed.

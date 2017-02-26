@@ -16,9 +16,14 @@
  */
 package org.jmeld.diff;
 
-import org.jmeld.util.*;
+import org.jmeld.util.DiffUtil;
+import org.jmeld.util.Ignore;
+import org.jmeld.util.Tokenizer;
+import org.jmeld.util.TokenizerFactory;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class JMRevision
 {
@@ -68,6 +73,11 @@ public class JMRevision
 
     /** The arrays have changed! Try to change the delta's incrementally.
      * This solves a performance issue while editing one of the array's.
+     * @param oArray oArray
+     * @param rArray rArray
+     * @param original original
+     * @param startLine startLine
+     * @param numberOfLines numberOfLines
      */
     public boolean update(Object[] oArray, Object[] rArray, boolean original,
                           int startLine, int numberOfLines)

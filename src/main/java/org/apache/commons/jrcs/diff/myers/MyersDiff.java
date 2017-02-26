@@ -58,7 +58,8 @@ package org.apache.commons.jrcs.diff.myers;
 
 import org.apache.commons.jrcs.diff.*;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A clean-room implementation of
@@ -243,8 +244,6 @@ public class MyersDiff
    * @param orig The original sequence.
    * @param rev The revised sequence.
    * @return A {@link Revision} script corresponding to the path.
-   * @throws DifferentiationFailedException if a {@link Revision} could
-   *         not be built from the given path.
    */
   public Revision buildRevision(PathNode path, Object[] orig, Object[] rev)
   {

@@ -1,11 +1,11 @@
 package org.jmeld.util.conf;
 
-import org.jmeld.util.*;
+import org.jmeld.util.JaxbPersister;
 
-import java.io.*;
-import java.util.*;
-
-import javax.xml.bind.*;
+import javax.xml.bind.JAXBException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class ConfigurationPersister
 {
@@ -21,7 +21,7 @@ public class ConfigurationPersister
     return instance;
   }
 
-  /** Load a configuration of type 'clazz' from a file.
+  /* Load a configuration of type 'clazz' from a file.
    */
   public <T extends AbstractConfiguration> T load(Class<T> clazz, File file)
       throws FileNotFoundException
@@ -42,7 +42,7 @@ public class ConfigurationPersister
     return configuration;
   }
 
-  /** Save a configuration to a file.
+  /* Save a configuration to a file.
    */
   public void save(AbstractConfiguration configuration, File file)
       throws JAXBException, IOException

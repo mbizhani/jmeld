@@ -1,9 +1,12 @@
 package org.jmeld.util;
 
-import javax.xml.bind.*;
-
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import java.io.*;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JaxbPersister
 {
@@ -22,7 +25,7 @@ public class JaxbPersister
     return instance;
   }
 
-  /** Load a object of type 'clazz' from a file.
+  /* Load a object of type 'clazz' from a file.
    */
   public <T> T load(Class<T> clazz, File file)
       throws FileNotFoundException, JAXBException
@@ -30,7 +33,7 @@ public class JaxbPersister
     return load(clazz, new FileInputStream(file));
   }
 
-  /** Load a object of type 'clazz' from a file.
+  /* Load a object of type 'clazz' from a file.
    */
   public <T> T load(Class<T> clazz, InputStream is)
       throws JAXBException
@@ -46,7 +49,7 @@ public class JaxbPersister
     }
   }
 
-  /** Save a object to a file.
+  /* Save a object to a file.
    */
   public void save(Object object, File file)
       throws JAXBException, IOException
@@ -58,7 +61,7 @@ public class JaxbPersister
     os.close();
   }
 
-  /** Save a object to a outputstream.
+  /* Save a object to a outputstream.
    */
   private void save(Object object, OutputStream os)
       throws JAXBException, IOException
@@ -75,7 +78,7 @@ public class JaxbPersister
     }
   }
 
-  /** Each class has it's own context to marshal and unmarshal.
+  /* Each class has it's own context to marshal and unmarshal.
    *   The context contains a jaxbcontext.
    */
   private Context getContext(Class clazz)

@@ -103,6 +103,7 @@ public abstract class Delta
    * original and revised text respectively.
    * @param orig the chunk in the original text.
    * @param rev  the chunk in the revised text.
+   * @return Delta
    */
   public static Delta newDelta(Chunk orig, Chunk rev)
   {
@@ -132,6 +133,8 @@ public abstract class Delta
   /**
    * Creates a delta object with the given chunks from the original
    * and revised texts.
+   * @param orig orig
+   * @param rev rev
    */
   protected Delta(Chunk orig, Chunk rev)
   {
@@ -141,6 +144,8 @@ public abstract class Delta
   /**
    * Initializaes the delta with the given chunks from the original
    * and revised texts.
+   * @param orig orig
+   * @param rev rev
    */
   protected void init(Chunk orig, Chunk rev)
   {
@@ -153,8 +158,7 @@ public abstract class Delta
    * @param target the text to patch.
    * @throws PatchFailedException if the patch cannot be applied.
    */
-  public abstract void verify(List target)
-      throws PatchFailedException;
+  public abstract void verify(List target) throws PatchFailedException;
 
   /**
    * Applies this delta as a patch to the given text.
@@ -178,7 +182,6 @@ public abstract class Delta
   /**
    * Applies this delta as a patch to the given text.
    * @param target the text to patch.
-   * @throws PatchFailedException if the patch cannot be applied.
    */
   public abstract void applyTo(List target);
 
@@ -210,6 +213,7 @@ public abstract class Delta
   /**
    * Converts this delta into its RCS style string representation.
    * @param EOL the string to use as line separator.
+   * @return String
    */
   public String toRCSString(String EOL)
   {

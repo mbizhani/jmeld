@@ -239,6 +239,7 @@ public class Revision
   /**
    * Converts this delta into its RCS style string representation.
    * @param EOL the string to use as line separator.
+   * @return String
    */
   public String toRCSString(String EOL)
   {
@@ -251,6 +252,7 @@ public class Revision
   /**
    * Converts this delta into its RCS style string representation
    * using the default line separator.
+   * @return String
    */
   public String toRCSString()
   {

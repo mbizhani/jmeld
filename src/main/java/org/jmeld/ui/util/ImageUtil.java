@@ -58,25 +58,25 @@ public class ImageUtil
     return createDarkerIcon(icon, -0.10f);
   }
 
-  /** Create a x% Transparent icon */
+  /* Create a x% Transparent icon */
   public static ImageIcon createDarkerIcon(ImageIcon icon, float percentage)
   {
     return createIcon(icon, new BrightnessFilter(percentage));
   }
 
-  /** Create a 20% Transparent icon */
+  /* Create a 20% Transparent icon */
   public static ImageIcon createTransparentIcon(ImageIcon icon)
   {
     return createTransparentIcon(icon, 20);
   }
 
-  /** Create a x% Transparent icon */
+  /* Create a x% Transparent icon */
   public static ImageIcon createTransparentIcon(ImageIcon icon, int percentage)
   {
     return createIcon(icon, new TransparentFilter(percentage));
   }
 
-  /** Create a new icon which is filtered by some ImageFilter */
+  /* Create a new icon which is filtered by some ImageFilter */
   private static synchronized ImageIcon createIcon(ImageIcon icon,
       ImageFilter filter)
   {

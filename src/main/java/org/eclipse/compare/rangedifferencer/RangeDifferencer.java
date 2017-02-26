@@ -28,7 +28,7 @@ import java.util.List;
  * the differing ranges but for non-differing ranges too.
  * <p>
  * The algorithm used is an objectified version of one described in:
- * <it>A File Comparison Program,</it> by Webb Miller and Eugene W. Myers,
+ * <i>A File Comparison Program,</i> by Webb Miller and Eugene W. Myers,
  * Software Practice and Experience, Vol. 15, Nov. 1985.
  *
  * @see IRangeComparator

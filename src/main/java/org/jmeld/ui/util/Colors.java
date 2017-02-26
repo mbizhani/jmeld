@@ -42,7 +42,8 @@ public class Colors
   }
 
   /**
-   * Get a highlighter that will match the current l&f.
+   * Get a highlighter that will match the current l and f.
+   * @return Color
    */
   public static Color getTableRowHighLighterColor()
   {

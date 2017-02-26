@@ -160,6 +160,7 @@ public class Chunk
 
   /**
    * Returns the index of the first line of the chunk.
+   * @return int
    */
   public int first()
   {
@@ -168,6 +169,7 @@ public class Chunk
 
   /**
    * Returns the index of the last line of the chunk.
+   * @return int
    */
   public int last()
   {
@@ -176,6 +178,7 @@ public class Chunk
 
   /**
    * Returns the <i>from</i> index of the chunk in RCS terms.
+   * @return int
    */
   public int rcsfrom()
   {
@@ -184,6 +187,7 @@ public class Chunk
 
   /**
    * Returns the <i>to</i> index of the chunk in RCS terms.
+   * @return int
    */
   public int rcsto()
   {
@@ -258,6 +262,7 @@ public class Chunk
   /**
    * Provide a string image of the chunk using the an empty prefix and
    * postfix.
+   * @param s
    */
   public void toString(StringBuffer s)
   {
@@ -270,6 +275,7 @@ public class Chunk
    * @param s where the string image should be appended.
    * @param prefix the text thatshould prefix each line.
    * @param postfix the text that should end each line.
+   * @return StringBuffer
    */
   public StringBuffer toString(StringBuffer s, String prefix, String postfix)
   {

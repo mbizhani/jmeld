@@ -25,6 +25,9 @@ public class ColorUtil
 
   /** Create a brighter color by changing the b component of a
    *    hsb-color (b=brightness, h=hue, s=saturation)
+   * @param color color
+   * @param factor factor
+   * @return Color
    */
   public static Color brighter(Color color, float factor)
   {
@@ -38,6 +41,8 @@ public class ColorUtil
 
   /** Get the brightness of a color. 
    *    The H from HSB!
+   * @param color color
+   * @return float
    */
   public static float getBrightness(Color color)
   {
@@ -51,6 +56,9 @@ public class ColorUtil
 
   /** Create a brighter color by changing the b component of a
    *    hsb-color (b=brightness, h=hue, s=saturation)
+   * @param color color
+   * @param factor factor
+   * @return Color
    */
   public static Color lighter(Color color, float factor)
   {
