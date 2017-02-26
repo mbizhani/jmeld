@@ -4,7 +4,7 @@
 
 	<groupId>org.devocative</groupId>
 	<artifactId>jmeld</artifactId>
-	<version>3.2-SNAPSHOT</version>
+	<version>3.2</version>
 	<packaging>jar</packaging>
 
 	<name>jmeld</name>
@@ -38,7 +38,7 @@
 		<connection>scm:git:https://github.com/mbizhani/jmeld.git</connection>
 		<developerConnection>scm:git:https://github.com/mbizhani/jmeld.git</developerConnection>
 		<url>https://github.com/mbizhani/jmeld</url>
-		<tag>HEAD</tag>
+		<tag>jmeld-3.2</tag>
 	</scm>
 
 	<properties>
