@@ -5,7 +5,7 @@
 
 	<groupId>org.devocative</groupId>
 	<artifactId>jmeld</artifactId>
-	<version>3.2</version>
+	<version>3.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>jmeld</name>
@@ -176,7 +176,7 @@
 			<build>
 				<plugins>
 					<!-- JavaDoc -->
-					<plugin>
+					<!--<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>
 						<version>${p.javadoc.ver}</version>
@@ -188,7 +188,7 @@
 								</goals>
 							</execution>
 						</executions>
-					</plugin>
+					</plugin>-->
 
 					<!-- GPG -->
 					<plugin>
