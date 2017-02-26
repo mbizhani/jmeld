@@ -78,6 +78,7 @@ public class JMRevision
      * @param original original
      * @param startLine startLine
      * @param numberOfLines numberOfLines
+     * @return boolean boolean
      */
     public boolean update(Object[] oArray, Object[] rArray, boolean original,
                           int startLine, int numberOfLines)

@@ -262,7 +262,7 @@ public class Chunk
   /**
    * Provide a string image of the chunk using the an empty prefix and
    * postfix.
-   * @param s
+   * @param s s
    */
   public void toString(StringBuffer s)
   {
@@ -325,7 +325,7 @@ public class Chunk
     return slice(Arrays.asList(seq), pos, count);
   }
 
-  /**
+  /*
    * Provide a string representation of the numeric range of this chunk.
    */
   public String rangeString()

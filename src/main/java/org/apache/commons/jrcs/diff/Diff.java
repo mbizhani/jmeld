@@ -155,7 +155,7 @@ public class Diff
    * @param orig the original
    * @param rev the revision to compare with the original.
    * @return a Revision describing the differences
-   * @throws DifferentiationFailedException
+   * @throws DifferentiationFailedException DifferentiationFailedException
    */
   public static Revision diff(Object[] orig, Object[] rev)
       throws DifferentiationFailedException
@@ -175,7 +175,7 @@ public class Diff
    * @param rev the revision to compare with the original.
    * @param algorithm the difference algorithm to use
    * @return a Revision describing the differences
-   * @throws DifferentiationFailedException
+   * @throws DifferentiationFailedException DifferentiationFailedException
    */
   public static Revision diff(Object[] orig, Object[] rev,
       DiffAlgorithm algorithm)
@@ -194,7 +194,7 @@ public class Diff
    *
    * @param rev the revision to compare with the original.
    * @return a Revision describing the differences
-   * @throws DifferentiationFailedException
+   * @throws DifferentiationFailedException DifferentiationFailedException
    */
   public Revision diff(Object[] rev)
       throws DifferentiationFailedException
